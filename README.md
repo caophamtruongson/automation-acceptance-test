@@ -106,8 +106,10 @@ As above, I use「PhantomJS」as browser, so「PhantomJS」need to be download t
 1. Steps for testing with other browsers (firefox, ie, chrome, etc)
     * Download drivers, example: for chrome
         * https://sites.google.com/a/chromium.org/chromedriver/
-        * Move to `/usr/local/bin/chromedriver`
-    * [Download](http://www.seleniumhq.org/download/) and start「selenium-server-standalone」with browser driver
-        * `java -Dwebdriver.chrome.driver="/opt/chromium-browser/chromedriver" -jar /usr/local/bin/selenium-server-standalone-3.4.0.jar`
+            * Move to `/usr/local/bin/chromedriver` 
+    * [Download「selenium-server-standalone」](http://www.seleniumhq.org/download/) move to this path `/usr/local/bin/selenium-server-standalone-3.4.0.jar` and start with driver
+        ```
+        java -Dwebdriver.chrome.driver="/usr/local/bin/chromedriver" -jar /usr/local/bin/selenium-server-standalone-3.4.0.jar
+        ```
     * Read more
         * https://github.com/lmc-eu/steward/wiki/Selenium-server-&-browser-drivers
